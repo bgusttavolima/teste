@@ -10,11 +10,12 @@ app.get("/",(req,res) =>{
 
     res.json({
 
-        message: "funcionando"
+        name: "Gustavo",
+        years: "18",
+        height: "1.78",
     })
 
 });
-
 
 
 app.listen(port)
