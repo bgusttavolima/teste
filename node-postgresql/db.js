@@ -32,3 +32,23 @@ async function connect() {
 
 connect();
 
+async function selectCustormers(){
+
+    const client = await connect();
+    const res = await client.query("select * from  usuarios"); //EDITADO PRA TESTE
+    return res.rows;
+}
+
+async function data(){
+
+    const client = await connect();
+    const res = await client.query("select * from usuarios"); //EDITADO PRA TESTE
+    return res.rows;
+}
+
+module.exports = {
+    data,
+    selectCustormers
+
+}
+

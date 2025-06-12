@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "cria_banco": "docker exec -i meu-postgres psql -U postgres -d postgres < meubanco.sql"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +14,8 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "pg": "^8.16.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
